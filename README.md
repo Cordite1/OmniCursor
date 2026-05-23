@@ -4,12 +4,17 @@ OmniCursor safely intercepts the game's native rendering pipeline (both Software
 
 Installation 
 Download the latest OmniCursor.dll from the Releases tab.
+
 Place OmniCursor.dll into the WoW root directory.
+
 Ensure your custom .png cursors (32x32 pixels) are placed in:  Data/Interface/Cursor/
+
 Launch the game
 
 Adding Custom Cursors 
+
 OmniCursor dynamically builds its database based on the files in your Cursor folder and the game's LockType.dbc.
+
 Example: Adding a Custom Tree Node Cursor
 Create your custom icon and save it as Tree.png (must be exactly 32x32).
 Create your out-of-range icon (usually desaturated) and save it as UnableTree.png.
