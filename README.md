@@ -1,6 +1,6 @@
-OmniCursor is a native, modular C++ cursor injection framework for the World of Warcraft Vanilla client (1.12.1).
+OmniCursor is a modular C++ cursor injection framework for the World of Warcraft Vanilla client (1.12.1).
 
-OmniCursor safely intercepts the game's native rendering pipeline (both Software and Hardware Cursor modes) to allow dynamic, drag-and-drop custom cursors based on in-game context (like hovering over custom gathering nodes).
+OmniCursor loads additional cursor images into memory, assigns them their strings, and then forces the engine to check the extra strings for valid returns when searching for which cursor to display, allowing custom cursors beyond the original limit of 42 existing hardcoded cursors in the 1.12.1 client.
 
 Installation
 
@@ -11,7 +11,7 @@ Launch the game
 
 Adding Custom Cursors 
 
-OmniCursor dynamically builds its database based on the files in your Cursor folder and the game's LockType.dbc.
+OmniCursor dynamically builds its database based on the files in your Cursor folder.
 
 Example: Adding a Custom Tree Node Cursor
 
